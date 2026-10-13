@@ -1,53 +1,163 @@
-    <!-- Upgraded Cybersecurity Projects Section -->
-    <section id="projects" class="py-24 px-6 max-w-4xl mx-auto">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Chhaya | Smart Infrastructure × Cyber Security</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0A192F',
+                        brandCard: '#112240',
+                        brandAccent: '#64FFDA',
+                        brandText: '#8892B0',
+                        brandLight: '#CCD6F6'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="bg-brandDark text-brandText font-sans selection:bg-brandAccent selection:text-brandDark">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur border-b border-brandCard px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-brandAccent font-mono text-xl font-bold">&lt;RC /&gt;</a>
+        <div class="hidden md:flex space-x-8 font-mono text-xs tracking-wider">
+            <a href="#about" class="text-brandLight hover:text-brandAccent transition">About</a>
+            <a href="#experience" class="text-brandLight hover:text-brandAccent transition">Experience</a>
+            <a href="#skills" class="text-brandLight hover:text-brandAccent transition">Skills</a>
+            <a href="#projects" class="text-brandLight hover:text-brandAccent transition">Projects</a>
+            <a href="#education" class="text-brandLight hover:text-brandAccent transition">Education</a>
+        </div>
+        <a href="mailto:rohanchhaya108@gmail.com" class="border border-brandAccent text-brandAccent font-mono text-xs px-4 py-2 rounded hover:bg-brandAccent/10 transition">Contact me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto py-20">
+        <p class="text-brandAccent font-mono mb-4 text-sm">L1 Support Engineer / M.Tech Scholar</p>
+        <h1 class="text-4xl md:text-7xl font-bold text-brandLight mb-4">Rohan Chhaya</h1>
+        <h2 class="text-3xl md:text-5xl font-bold text-brandText mb-6">Keeping smart city systems running. Securing what comes next.</h2>
+        <p class="max-w-xl text-lg mb-10 leading-relaxed">
+            I'm Rohan Chhaya — an L1 Support Engineer supporting smart city operations at Rajkot Municipal Corporation's Integrated Command and Control Centre, while pursuing an M.Tech in Cyber Security at Marwadi University.
+        </p>
+        <div class="flex flex-wrap gap-4 font-mono text-sm">
+            <a href="#experience" class="border border-brandAccent text-brandAccent px-6 py-3 rounded hover:bg-brandAccent/10 transition">Explore experience ↘</a>
+            <a href="https://linkedin.com" target="_blank" class="bg-brandAccent text-brandDark font-bold px-6 py-3 rounded hover:bg-brandAccent/80 transition">LinkedIn ↗</a>
+        </div>
+    </section>
+
+    <!-- Profile Snapshot / Section 01 -->
+    <section id="about" class="py-24 px-6 max-w-4xl mx-auto">
+        <span class="text-brandAccent font-mono text-sm block mb-2">01 / Professional profile</span>
         <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
-            <span class="text-brandAccent font-mono text-xl mr-2">04.</span> Security Documentation & Labs
+            Infrastructure-first. Security-minded.
             <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
         </h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Active Project 1: Vulnerability Lab Writeup -->
-            <div class="bg-brandCard p-6 rounded border border-gray-800 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-                <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="font-mono text-xs text-brandAccent"><i class="fas fa-bug mr-1"></i> Network Pentesting</span>
-                        <div class="flex space-x-3 text-gray-400 text-sm">
-                            <i class="fab fa-github"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-brandLight mb-2">Network Recon & Vulnerability Audit Log</h3>
-                    <p class="text-sm mb-4 leading-relaxed">
-                        Documented end-to-end vulnerability scanning and exploitation workflows. Performed comprehensive reconnaissance using Nmap, analyzed traffic captures via Wireshark, and generated threat landscape matrices using Shodan.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2 font-mono text-[10px] text-brandLight mt-4">
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-700">Wireshark</span>
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-700">Nmap</span>
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-700">Shodan</span>
-                </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-4 text-base">
+                <p>
+                    A practical blend of frontline technical support, smart infrastructure operations, and ongoing cyber security study.
+                </p>
+                <p>
+                    My professional experience is centered on first-line support and maintenance of smart city infrastructure in a 24/7, mission-critical setting. At INNOWORQ INFOTECH PVT LTD, I support the Rajkot Municipal Corporation (RMC) Integrated Command and Control Centre (ICCC), working with Windows Server and network-connected systems.
+                </p>
+                <p>
+                    My responsibilities include provisioning, monitoring, and troubleshooting switches, wireless access points, IP cameras, IoT devices, and Smart LEDs. I am also pursuing an M.Tech in Cyber Security at Marwadi University, building on my B.Tech in Computer Science Engineering from Darshan University.
+                </p>
             </div>
-
-            <!-- Placeholder Project 2: Upcoming Malware Analysis -->
-            <div class="bg-brandCard p-6 rounded border border-brandAccent/10 bg-gradient-to-br from-brandCard to-brandDark/50 flex flex-col justify-between relative group">
-                <div class="absolute top-3 right-3">
-                    <span class="text-[9px] font-mono tracking-widest text-brandAccent bg-brandAccent/10 px-2 py-0.5 rounded animate-pulse">
-                        STAGING
-                    </span>
+            
+            <!-- Dashboard Widget Block -->
+            <div class="bg-brandCard p-6 rounded border border-gray-800 font-mono text-xs space-y-4">
+                <p class="text-brandLight uppercase tracking-wider font-bold border-b border-gray-700 pb-2">Profile / Snapshot</p>
+                <div>
+                    <span class="text-brandAccent block">● FIELD OPERATIONS</span>
+                    <span class="text-gray-400">24/7 Mission-critical support environment</span>
                 </div>
                 <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="font-mono text-xs text-gray-400"><i class="fas fa-flask mr-1"></i> Malware Sandbox</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-400 mb-2 group-hover:text-brandAccent transition">Behavioral Analysis Writeup</h3>
-                    <p class="text-sm text-gray-500 mb-4 leading-relaxed">
-                        [Framework Staging] Static and dynamic verification pipeline for tracing executable anomalies within a controlled local virtual machine sandbox environment. Automated telemetry gathering logs forthcoming.
-                    </p>
+                    <span class="text-brandAccent block">● RMC · ICCC</span>
+                    <span class="text-gray-400">Smart city operations hub integration</span>
                 </div>
-                <div class="flex flex-wrap gap-2 font-mono text-[10px] text-gray-600 mt-4">
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-800">Kali Linux</span>
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-800">Metasploit</span>
-                    <span class="bg-brandDark px-2 py-1 rounded border border-gray-800">Burp Suite</span>
+                <div>
+                    <span class="text-brandAccent block">● WINDOWS SERVER</span>
+                    <span class="text-gray-400">Administration & infrastructure support</span>
+                </div>
+                <div>
+                    <span class="text-brandAccent block">● CYBER SECURITY</span>
+                    <span class="text-gray-400">Marwadi University research scholar</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Experience / Section 02 -->
+    <section id="experience" class="py-24 px-6 max-w-4xl mx-auto">
+        <span class="text-brandAccent font-mono text-sm block mb-2">02 / Professional experience</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
+            Smart city operations, at the frontline.
+            <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
+        </h2>
+        
+        <div class="bg-brandCard p-6 md:p-8 rounded border border-gray-800 mb-8">
+            <div class="flex flex-wrap justify-between items-start mb-4">
+                <div>
+                    <h3 class="text-xl font-bold text-brandLight">L1 Support Engineer</h3>
+                    <span class="text-brandAccent font-mono text-sm">INNOWORQ INFOTECH PVT LTD · RMC · ICCC Support</span>
+                </div>
+                <span class="text-xs font-mono text-brandAccent bg-brandAccent/5 px-3 py-1 rounded">24/7 Environment</span>
+            </div>
+            
+            <p class="mb-6 text-brandLight font-medium">Rajkot Municipal Corporation Integrated Command and Control Centre</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 font-mono text-[11px] mb-6 bg-brandDark/40 p-4 rounded border border-gray-900">
+                <div><span class="text-brandAccent">▹</span> Windows Server</div>
+                <div><span class="text-brandAccent">▹</span> Network Switches</div>
+                <div><span class="text-brandAccent">▹</span> Wireless APs</div>
+                <div><span class="text-brandAccent">▹</span> IP Cameras</div>
+                <div><span class="text-brandAccent">▹</span> IoT Devices</div>
+                <div><span class="text-brandAccent">▹</span> Smart LEDs</div>
+            </div>
+
+            <ul class="space-y-3 text-sm">
+                <li class="flex items-start">
+                    <span class="text-brandAccent mr-2">▪</span> Provide proactive first-line technical support in a 24/7 mission-critical environment.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-brandAccent mr-2">▪</span> Provision, monitor, and troubleshoot network hardware and smart city components.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-brandAccent mr-2">▪</span> Support operational efficiency, urban governance, public safety, and real-time data intelligence.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills / Section 03 -->
+    <section id="skills" class="py-24 px-6 max-w-4xl mx-auto">
+        <span class="text-brandAccent font-mono text-sm block mb-2">03 / Skills & tools</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
+            A practical toolkit.
+            <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs">
+            <div class="bg-brandCard p-6 rounded border border-gray-800">
+                <h3 class="text-brandLight text-sm font-bold mb-3">⌘ Core languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">C</span>
+                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">Java</span>
+                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">Dart</span>
+                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">C#</span>
+                </div>
+            </div>
+            
+            <div class="bg-brandCard p-6 rounded border border-gray-800">
+                <h3 class="text-brandLight text-sm font-bold mb-3">▤ Web tech & frameworks</h3>
+                <div class="flex flex-wrap gap-2">
