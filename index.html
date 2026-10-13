@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohan Chhaya | Smart Infrastructure × Cyber Security</title>
+    <title>rohan@infra-sec:~</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://tailwindcss.com"></script>
     <script>
@@ -11,11 +11,15 @@
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#0A192F',
-                        brandCard: '#112240',
-                        brandAccent: '#64FFDA',
-                        brandText: '#8892B0',
-                        brandLight: '#CCD6F6'
+                        termDark: '#0c0f12',
+                        termCard: '#14191f',
+                        termAccent: '#39ff14', // Matrix Green
+                        termBlue: '#00bfff',
+                        termText: '#a9b1d6',
+                        termLight: '#f8f8f2'
+                    },
+                    fontFamily: {
+                        mono: ['Courier New', 'Courier', 'monospace']
                     }
                 }
             }
@@ -24,140 +28,129 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
-<body class="bg-brandDark text-brandText font-sans selection:bg-brandAccent selection:text-brandDark">
+<body class="bg-termDark text-termText font-mono selection:bg-termAccent selection:text-termDark min-h-screen">
 
-    <!-- Sticky Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur border-b border-brandCard px-6 py-4 flex justify-between items-center">
-        <a href="#" class="text-brandAccent font-mono text-xl font-bold">&lt;RC /&gt;</a>
-        <div class="hidden md:flex space-x-8 font-mono text-xs tracking-wider">
-            <a href="#about" class="text-brandLight hover:text-brandAccent transition">About</a>
-            <a href="#experience" class="text-brandLight hover:text-brandAccent transition">Experience</a>
-            <a href="#skills" class="text-brandLight hover:text-brandAccent transition">Skills</a>
-            <a href="#projects" class="text-brandLight hover:text-brandAccent transition">Projects</a>
-            <a href="#education" class="text-brandLight hover:text-brandAccent transition">Education</a>
+    <!-- Terminal Header / Top Navigation -->
+    <header class="bg-termCard/80 backdrop-blur sticky top-0 z-50 border-b border-gray-800 px-6 py-3 flex justify-between items-center text-xs">
+        <div class="flex items-center space-x-2">
+            <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+            <span class="text-gray-500 pl-2">rohan@infra-sec:~</span>
         </div>
-        <a href="mailto:rohanchhaya108@gmail.com" class="border border-brandAccent text-brandAccent font-mono text-xs px-4 py-2 rounded hover:bg-brandAccent/10 transition">Contact me</a>
-    </nav>
+        <nav class="hidden md:flex space-x-6 text-[11px]">
+            <a href="#about" class="hover:text-termAccent transition">./about_me</a>
+            <a href="#experience" class="hover:text-termAccent transition">./experience</a>
+            <a href="#skills" class="hover:text-termAccent transition">./skills_matrix</a>
+            <a href="#projects" class="hover:text-termAccent transition">./labs_log</a>
+            <a href="#education" class="hover:text-termAccent transition">./education</a>
+        </nav>
+        <a href="mailto:rohanchhaya108@gmail.com" class="text-termAccent border border-termAccent/40 px-2 py-1 rounded text-[11px] hover:bg-termAccent/10 transition">./contact</a>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto py-20">
-        <p class="text-brandAccent font-mono mb-4 text-sm">L1 Support Engineer / M.Tech Scholar</p>
-        <h1 class="text-4xl md:text-7xl font-bold text-brandLight mb-4">Rohan Chhaya</h1>
-        <h2 class="text-3xl md:text-5xl font-bold text-brandText mb-6">Keeping smart city systems running. Securing what comes next.</h2>
-        <p class="max-w-xl text-lg mb-10 leading-relaxed">
-            I'm Rohan Chhaya — an L1 Support Engineer supporting smart city operations at Rajkot Municipal Corporation's Integrated Command and Control Centre, while pursuing an M.Tech in Cyber Security at Marwadi University.
-        </p>
-        <div class="flex flex-wrap gap-4 font-mono text-sm">
-            <a href="#experience" class="border border-brandAccent text-brandAccent px-6 py-3 rounded hover:bg-brandAccent/10 transition">Explore experience ↘</a>
-            <a href="https://linkedin.com" target="_blank" class="bg-brandAccent text-brandDark font-bold px-6 py-3 rounded hover:bg-brandAccent/80 transition">LinkedIn ↗</a>
-        </div>
-    </section>
+    <!-- Main Terminal Container -->
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
 
-    <!-- Profile Snapshot / Section 01 -->
-    <section id="about" class="py-24 px-6 max-w-4xl mx-auto">
-        <span class="text-brandAccent font-mono text-sm block mb-2">01 / Professional profile</span>
-        <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
-            Infrastructure-first. Security-minded.
-            <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
-        </h2>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="md:col-span-2 space-y-4 text-base">
+        <!-- Hero Prompt Section -->
+        <section class="pt-12">
+            <div class="space-y-2 text-sm md:text-base">
+                <p class="text-gray-500"># Initializing secure session parameters...</p>
+                <p class="text-gray-500"># Establishing uplink to Rajkot Municipal Corporation ICCC...</p>
+                <p class="text-gray-400 font-bold">[SUCCESS] Connection stable.</p>
+                <br>
+                <div class="flex items-center space-x-2 text-termAccent text-lg">
+                    <span>rohan@infra-sec:~$</span>
+                    <h1 class="text-termLight font-bold text-xl md:text-3xl">cat rohan_chhaya.json</h1>
+                </div>
+            </div>
+
+            <!-- Profile Dashboard Window -->
+            <div class="bg-termCard border border-gray-800 rounded-lg p-6 mt-6 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 text-sm">
+                    <div class="space-y-2">
+                        <p><span class="text-termBlue">"identity":</span> "Rohan Chhaya",</p>
+                        <p><span class="text-termBlue">"current_role":</span> "L1 Support Engineer",</p>
+                        <p><span class="text-termBlue">"organization":</span> "INNOWORQ INFOTECH PVT LTD",</p>
+                        <p><span class="text-termBlue">"deployment_node":</span> "RMC Integrated Command & Control Centre",</p>
+                        <p><span class="text-termBlue">"academic_track":</span> "M.Tech Scholar in Cyber Security",</p>
+                        <p><span class="text-termBlue">"university":</span> "Marwadi University, Rajkot",</p>
+                        <p><span class="text-termBlue">"location":</span> "Rajkot, Gujarat, India"</p>
+                    </div>
+                    <div class="bg-termDark/60 p-4 rounded border border-gray-900 flex flex-col justify-between text-xs font-bold space-y-2">
+                        <div class="flex justify-between text-gray-500 border-b border-gray-800 pb-1">
+                            <span>INFRASTRUCTURE STATUS</span>
+                            <span class="text-termAccent animate-pulse">● LIVE</span>
+                        </div>
+                        <p><i class="fas fa-server mr-2 text-termBlue"></i> Windows Server Admin</p>
+                        <p><i class="fas fa-network-wired mr-2 text-termBlue"></i> Smart City Infrastructure Support</p>
+                        <p><i class="fas fa-shield-halved mr-2 text-termAccent"></i> Active Defense Threat Hunting</p>
+                        <div class="pt-4 flex space-x-4">
+                            <a href="#experience" class="text-termAccent underline hover:text-termLight">./view_experience</a>
+                            <a href="https://linkedin.com" target="_blank" class="text-termBlue underline hover:text-termLight">LinkedIn_profile ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="flex items-center space-x-2 text-termAccent mb-6">
+                <span>rohan@infra-sec:~$</span>
+                <h2 class="text-termLight font-bold text-lg">./about_me.sh</h2>
+            </div>
+            <div class="text-sm md:text-base leading-relaxed space-y-4 bg-termCard/40 border border-gray-900 p-6 rounded-lg">
                 <p>
-                    A practical blend of frontline technical support, smart infrastructure operations, and ongoing cyber security study.
+                    My technical exposure bridges the gap between infrastructure scaling frameworks and active defensive security modeling. I specialize in maintaining high availability parameters inside active production networks.
                 </p>
                 <p>
-                    My professional experience is centered on first-line support and maintenance of smart city infrastructure in a 24/7, mission-critical setting. At INNOWORQ INFOTECH PVT LTD, I support the Rajkot Municipal Corporation (RMC) Integrated Command and Control Centre (ICCC), working with Windows Server and network-connected systems.
-                </p>
-                <p>
-                    My responsibilities include provisioning, monitoring, and troubleshooting switches, wireless access points, IP cameras, IoT devices, and Smart LEDs. I am also pursuing an M.Tech in Cyber Security at Marwadi University, building on my B.Tech in Computer Science Engineering from Darshan University.
+                    Through my operations workspace at the Rajkot Municipal Corporation (RMC) ICCC, I administer core enterprise systems, handling everything from Windows Server maintenance to provisioning layered tracking nodes. Pursuing my postgraduate research at Marwadi University helps me transform frontline telemetry data into structured security documentation.
                 </p>
             </div>
-            
-            <!-- Dashboard Widget Block -->
-            <div class="bg-brandCard p-6 rounded border border-gray-800 font-mono text-xs space-y-4">
-                <p class="text-brandLight uppercase tracking-wider font-bold border-b border-gray-700 pb-2">Profile / Snapshot</p>
-                <div>
-                    <span class="text-brandAccent block">● FIELD OPERATIONS</span>
-                    <span class="text-gray-400">24/7 Mission-critical support environment</span>
-                </div>
-                <div>
-                    <span class="text-brandAccent block">● RMC · ICCC</span>
-                    <span class="text-gray-400">Smart city operations hub integration</span>
-                </div>
-                <div>
-                    <span class="text-brandAccent block">● WINDOWS SERVER</span>
-                    <span class="text-gray-400">Administration & infrastructure support</span>
-                </div>
-                <div>
-                    <span class="text-brandAccent block">● CYBER SECURITY</span>
-                    <span class="text-gray-400">Marwadi University research scholar</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience / Section 02 -->
-    <section id="experience" class="py-24 px-6 max-w-4xl mx-auto">
-        <span class="text-brandAccent font-mono text-sm block mb-2">02 / Professional experience</span>
-        <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
-            Smart city operations, at the frontline.
-            <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
-        </h2>
-        
-        <div class="bg-brandCard p-6 md:p-8 rounded border border-gray-800 mb-8">
-            <div class="flex flex-wrap justify-between items-start mb-4">
-                <div>
-                    <h3 class="text-xl font-bold text-brandLight">L1 Support Engineer</h3>
-                    <span class="text-brandAccent font-mono text-sm">INNOWORQ INFOTECH PVT LTD · RMC · ICCC Support</span>
-                </div>
-                <span class="text-xs font-mono text-brandAccent bg-brandAccent/5 px-3 py-1 rounded">24/7 Environment</span>
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="flex items-center space-x-2 text-termAccent mb-6">
+                <span>rohan@infra-sec:~$</span>
+                <h2 class="text-termLight font-bold text-lg">./print_history --verbose</h2>
             </div>
             
-            <p class="mb-6 text-brandLight font-medium">Rajkot Municipal Corporation Integrated Command and Control Centre</p>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 font-mono text-[11px] mb-6 bg-brandDark/40 p-4 rounded border border-gray-900">
-                <div><span class="text-brandAccent">▹</span> Windows Server</div>
-                <div><span class="text-brandAccent">▹</span> Network Switches</div>
-                <div><span class="text-brandAccent">▹</span> Wireless APs</div>
-                <div><span class="text-brandAccent">▹</span> IP Cameras</div>
-                <div><span class="text-brandAccent">▹</span> IoT Devices</div>
-                <div><span class="text-brandAccent">▹</span> Smart LEDs</div>
-            </div>
-
-            <ul class="space-y-3 text-sm">
-                <li class="flex items-start">
-                    <span class="text-brandAccent mr-2">▪</span> Provide proactive first-line technical support in a 24/7 mission-critical environment.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-brandAccent mr-2">▪</span> Provision, monitor, and troubleshoot network hardware and smart city components.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-brandAccent mr-2">▪</span> Support operational efficiency, urban governance, public safety, and real-time data intelligence.
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Skills / Section 03 -->
-    <section id="skills" class="py-24 px-6 max-w-4xl mx-auto">
-        <span class="text-brandAccent font-mono text-sm block mb-2">03 / Skills & tools</span>
-        <h2 class="text-2xl md:text-3xl font-bold text-brandLight mb-8 flex items-center">
-            A practical toolkit.
-            <span class="h-[1px] bg-brandCard flex-grow ml-4"></span>
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs">
-            <div class="bg-brandCard p-6 rounded border border-gray-800">
-                <h3 class="text-brandLight text-sm font-bold mb-3">⌘ Core languages</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">C</span>
-                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">Java</span>
-                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">Dart</span>
-                    <span class="bg-brandDark px-2.5 py-1 rounded border border-gray-700 text-brandAccent">C#</span>
+            <div class="relative border-l border-gray-800 pl-6 space-y-12">
+                <!-- Timeline Node 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1 bg-termAccent/20 border border-termAccent text-termAccent w-4 h-4 rounded-full flex items-center justify-center text-[8px]">●</span>
+                    <div class="bg-termCard border border-gray-800 p-6 rounded-lg">
+                        <div class="flex flex-wrap justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-base font-bold text-termLight">L1 Support Engineer</h3>
+                                <p class="text-xs text-termBlue">INNOWORQ INFOTECH PVT LTD</p>
+                            </div>
+                            <span class="text-[11px] text-termAccent font-mono bg-termAccent/10 px-2 py-0.5 rounded border border-termAccent/20">24/7 Operations</span>
+                        </div>
+                        <p class="text-xs text-gray-400 mb-4">Site Location: Rajkot Municipal Corporation (RMC) Integrated Command and Control Centre (ICCC)</p>
+                        <ul class="space-y-2 text-xs text-termText">
+                            <li><span class="text-termAccent">&gt;</span> Administer system uptime parameters for Active Windows Server environments.</li>
+                            <li><span class="text-termAccent">&gt;</span> Provision, optimize metrics, and perform active tracking adjustments on critical Network Switches, Wireless APs, IP Cameras, IoT elements, and Smart City hardware links.</li>
+                            <li><span class="text-termAccent">&gt;</span> Interface directly with distributed monitoring grids to preserve public safety telemetry paths.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section id="skills">
+            <div class="flex items-center space-x-2 text-termAccent mb-6">
+                <span>rohan@infra-sec:~$</span>
+                <h2 class="text-termLight font-bold text-lg">./check_dependencies</h2>
+            </div>
             
-            <div class="bg-brandCard p-6 rounded border border-gray-800">
-                <h3 class="text-brandLight text-sm font-bold mb-3">▤ Web tech & frameworks</h3>
-                <div class="flex flex-wrap gap-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <!-- Security Stack -->
+                <div class="bg-termCard p-5 rounded-lg border border-gray-800">
+                    <h3 class="text-termAccent font-bold mb-3"><i class="fas fa-shield-halved mr-2"></i> Cyber Security & Network Auditing</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-termDark px-2 py-1 rounded border border-gray-700 text-termLight">Metasploit</span>
+                        <span class="bg-termDark px-2 py-1 rounded border border-gray-700 text-termLight">Kali Linux</span>
+                        <span class="bg-termDark px-2 py-1 rounded border border-gray-700 text-termLight">Shodan</span>
